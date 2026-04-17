@@ -51,7 +51,7 @@
             <?php if(!empty($ficha)): ?>
                 <div>
                     <tr>
-                        <th>Profecional:</th>
+                        <th>Profesional:</th>
                         <td><?php echo $ficha['nombre_profecional']; ?></td>
                     </tr>
                     <div>    

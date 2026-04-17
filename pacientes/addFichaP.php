@@ -99,7 +99,7 @@
                         <form name="form" action="" method="post">
                             <div>
                                 <tr>
-                                    <th>Profecional: </th>
+                                    <th>Profesional: </th>
                                     <td><?php  echo $nombreProfecionas['nombre']; ?></td>
                                 </tr>
                             </div>

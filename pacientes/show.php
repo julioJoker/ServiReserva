@@ -74,7 +74,7 @@
                         </tr>
                         <tr>
                             <th>Direccion:</th>
-                            <td><?php echo $paciente['dirección']; ?></td>
+                            <td><?php echo $paciente['direccion']; ?></td>
                         </tr>
                         <tr>
                             <th>Fecha de nacimiento:</th>
@@ -136,9 +136,9 @@
                         <p>
                             <a href="<?php echo ADD_RESERVA . $id ?>" class="btn btn-outline-primary">Reservar Hora</a>
                         </p>
-                        <p>
-                            <a href="<?php echo SHOW_FICHASPACIEN . $id ?>" class="btn btn-outline-primary">Fichas Medicas paciente</a>
-                        </p>
+                        <!-- <p>
+                            <a href="<?php /* echo SHOW_FICHASPACIEN . $id */?>" class="btn btn-outline-primary">Fichas Medicas paciente</a>
+                        </p> -->
                     <?php else: ?>
                         <p class="text-info">No hay datos</p>
                     <?php endif; ?>

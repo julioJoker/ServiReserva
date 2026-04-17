@@ -121,7 +121,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="nomEmpl" class="form-label">Profecional<span class="text-danger">*</span> </label>
+                    <label for="nomEmpl" class="form-label">Profesional<span class="text-danger">*</span> </label>
                     <select name="nomEmpl" class="form-control">
                         <option value="">Seleccione...</option>
 

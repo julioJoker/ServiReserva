@@ -72,7 +72,7 @@ $res = $this->_db->query("
 
     public function getReservaPaciente($paciente)
     {
-        $res = $this->_db->prepare("SELECT r.id, r.fecha, r.activo, r.created_at, e.nombre as especialidad, h.horario as horario ,r.nombreProfecional as nombreProfecional FROM reservas r INNER JOIN especialidades e ON r.especialidad_id = e.id INNER JOIN horarios h ON r.horario_id = h.id INNER JOIN pacientes p ON r.paciente_id = p.id INNER JOIN usuarios u ON r.usuario_id = u.id INNER JOIN empleados emp ON u.empleado_id = emp.id WHERE r.paciente_id = ?");
+        $res = $this->_db->prepare("SELECT r.id, r.fecha, r.activo, r.created_at, e.nombre as especialidad, h.horario as horario ,        emp.nombre AS nombreEmpleado FROM reservas r INNER JOIN especialidades e ON r.especialidad_id = e.id INNER JOIN horarios h ON r.horario_id = h.id INNER JOIN pacientes p ON r.paciente_id = p.id INNER JOIN usuarios u ON r.usuario_id = u.id INNER JOIN empleados emp ON u.empleado_id = emp.id WHERE r.paciente_id = ?");
        
         $res->bindParam(1, $paciente);
         
@@ -116,7 +116,7 @@ $res = $this->_db->query("
     }
     public function addReserva2($fecha, $especialidad, $paciente, $usuario, $horario,$nombreProfecional)
     {
-        $res = $this->_db->prepare("INSERT INTO reservas(fecha, activo, especialidad_id, paciente_id, usuario_id, horario_id, created_at, updated_at,nombreProfecional) VALUES(?, 1, ?, ?, ?, ?, now(), now(),? )");
+        $res = $this->_db->prepare("INSERT INTO reservas(fecha, activo, especialidad_id, paciente_id, usuario_id, horario_id, created_at, updated_at,nombreProfesional) VALUES(?, 1, ?, ?, ?, ?, now(), now(),? )");
         $res->bindParam(1, $fecha);
         $res->bindParam(2, $especialidad);
         $res->bindParam(3, $paciente);

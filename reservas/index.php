@@ -43,7 +43,7 @@
                 <table class="table table-hover">
                     <tr>
                         <th>Fecha de Creación</th>
-                        <th>Profecional</th>
+                        <th>Profesional</th>
                         <th>Especialidad</th>
                         <th>Fecha de Reserva</th>
                         <th>Horario</th>

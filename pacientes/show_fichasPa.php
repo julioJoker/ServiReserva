@@ -94,9 +94,9 @@
                         <p>
                             <a href="<?php echo ADD_RESERVA . $id ?>" class="btn btn-outline-primary">Reservar Hora</a>
                         </p>
-                        <p>
-                            <a href="<?php echo ADD_FICHAPACIEN . $id ?>" class="btn btn-outline-primary">Crear Fichas Medicas paciente</a>
-                        </p>
+                        <!-- <p>
+                            <a href="<?php/*echo ADD_FICHAPACIEN . $id*/ ?>" class="btn btn-outline-primary">Crear Fichas Medicas paciente</a>
+                        </p> -->
                     <?php else: ?>
                         <p class="text-info">No hay datos</p>
                     <?php endif; ?>
@@ -108,7 +108,7 @@
                         <tr>
                             
                             <th>N Ficha</th>
-                            <th>Profecional</th>
+                            <th>Profesional</th>
                             <th>Especialidad</th>
                             <th>Fecha Atencion</th>
                             <th>Horario</th>

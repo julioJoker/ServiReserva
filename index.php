@@ -30,7 +30,7 @@
 <body>
     <header>
         <!--  llamada a archivo de menu -->
-        <?php include('partials/menu.php'); ?>
+        <?php/* include('partials/menu.php');*/ ?>
         <?php include('partials/mensajes.php'); ?>
     </header>
     <div class="container">
